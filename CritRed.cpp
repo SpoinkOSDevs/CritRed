@@ -1,5 +1,8 @@
-#include <fstream>
-#include <cstdlib> // For system calls (if systemd library unavailable)
+#include <iostream>     // For input and output
+#include <fstream>      // For file input/output operations
+#include <cstdlib>      // For system calls (e.g., for copying files)
+#include <filesystem>   // For filesystem operations (available in C++17)
+#include <string>       // For string manipulation
 
 bool install_program() {
   std::cout << "Installing CritRed as a service..." << std::endl;
